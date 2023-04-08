@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import React from 'react'
 import { Canvas, useFrame } from "@react-three/fiber"
 import {
@@ -27,7 +29,6 @@ import {
     PerspectiveCamera,
     Text,
 } from "@react-three/drei"
-THREE.ColorManagement.legacyMode = true
 
 
 
@@ -915,6 +916,7 @@ function CameraRig() {
 }
 
 export default function ThreeJS() {
+    
     return (
         <>
             <div
