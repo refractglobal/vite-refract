@@ -34,7 +34,7 @@ THREE.ColorManagement.legacyMode = true
 const context = createContext()
 export function Instances({ children, ...props }) {
     const { nodes } = useGLTF(
-        "https://github.com/refractglobal/vite-refract/blob/1dcc917287638f8e092bb94d6c04d1331dcebb4d/public/computerScene.glb"
+        "https://rawcdn.githack.com/refractglobal/vite-refract/c8d1171560c4c36c381528b5e2da019935496133/public/computerScene.glb"
     )
     const instances = useMemo(
         () => ({
@@ -66,7 +66,7 @@ export function Instances({ children, ...props }) {
 
 export function Computers(props) {
     const { nodes: n, materials: m } = useGLTF(
-        "https://github.com/refractglobal/vite-refract/blob/1dcc917287638f8e092bb94d6c04d1331dcebb4d/public/computerScene.glb"
+        "https://rawcdn.githack.com/refractglobal/vite-refract/c8d1171560c4c36c381528b5e2da019935496133/public/computerScene.glb"
     )
     const instances = useContext(context)
     return (
@@ -745,7 +745,7 @@ export function Computers(props) {
    It renders a custom scene into a texture and projects it onto monitors screen */
 function Screen({ frame, panel, children, ...props }) {
     const { nodes, materials } = useGLTF(
-        "https://github.com/refractglobal/vite-refract/blob/1dcc917287638f8e092bb94d6c04d1331dcebb4d/public/computerScene.glb"
+        "https://rawcdn.githack.com/refractglobal/vite-refract/c8d1171560c4c36c381528b5e2da019935496133/public/computerScene.glb"
     )
     return (
         <group {...props}>
@@ -826,7 +826,7 @@ function ScreenInteractive(props) {
 function Leds({ instances }) {
     const ref = useRef()
     const { nodes } = useGLTF(
-        "https://github.com/refractglobal/vite-refract/blob/1dcc917287638f8e092bb94d6c04d1331dcebb4d/public/computerScene.glb"
+        "https://rawcdn.githack.com/refractglobal/vite-refract/c8d1171560c4c36c381528b5e2da019935496133/public/computerScene.glb"
     )
     useMemo(() => {
         nodes.Sphere.material = new THREE.MeshBasicMaterial()
