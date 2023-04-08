@@ -4,7 +4,5 @@ import './index.css'
 import ThreeJS from './modules/Three'
 
 ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
     <ThreeJS />
-  </React.StrictMode>,
 )
