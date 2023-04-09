@@ -12,5 +12,22 @@ export default defineConfig({
   },
   server: {
     port: 3000
-  }
+  },
+  build: {
+    minify: true,
+    manifest: true,
+    rollupOptions: {
+      input: './src/main.ts',
+      output: {
+        format: 'umd',
+        entryFileNames: 'main.js',
+        esModule: false,
+        compact: true,
+        globals: {
+          jquery: '$',
+        },
+      },
+      external: ['jquery'],
+    },
+  },
 })
