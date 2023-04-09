@@ -17,7 +17,7 @@ export default defineConfig({
     minify: true,
     manifest: true,
     rollupOptions: {
-      input: './src/main.ts',
+      input: './src/main.tsx',
       output: {
         format: 'umd',
         entryFileNames: 'main.js',
