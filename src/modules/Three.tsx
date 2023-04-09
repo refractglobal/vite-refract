@@ -1002,3 +1002,5 @@ export default function ThreeJS() {
         </>
     )
 }
+
+useGLTF.preload('https://rawcdn.githack.com/refractglobal/vite-refract/c8d1171560c4c36c381528b5e2da019935496133/public/computerScene.glb')
